@@ -7,10 +7,10 @@ using static System.Console;
 
 namespace CA1Question
 {
-    class Student
+    public class Student
     {
-        public string Name { get; set; }
-        public string DateOfBirth { get; set; }
+        public static string Name { get; set; }
+        public static string DateOfBirth { get; set; }
 
         public List<Subject> Subjects = new List<Subject>();
 

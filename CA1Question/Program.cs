@@ -7,9 +7,9 @@ using static System.Console;
 
 namespace CA1Question
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Subject subject1 = new Subject("Programming", "Vivion Kinsella", 1);
             Subject subject2 = new Subject("Databases", "Padraig Harte", 1);
@@ -30,11 +30,32 @@ namespace CA1Question
 
             WriteLine($"\n{student2} \n{subject3} \n{subject4}");
 
-            /*foreach (Subject subject in players)
-            {
-                WriteLine(player);
-            }
-            */
+            DisplayAgeInDays(Student.DateOfBirth);
         }
+
+        public static void DisplayAgeInDays(string DOB)
+        {
+            int dateBirth, answer;
+
+            dateBirth = int.Parse(DOB);
+
+            string[] fields = new string[3];
+
+            fields = DOB.Split('-');
+
+            int year = int.Parse(fields[2]);
+
+            int month = int.Parse(fields[1]);
+
+            int day = int.Parse(fields[0]);
+
+            int ageYears = 2019 - year;
+
+            int ageMonths = 11 - month;
+
+            answer = (year * 365) + (month * 30) + day;
+        }
+
+
     }
 }
