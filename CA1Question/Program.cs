@@ -11,6 +11,7 @@ namespace CA1Question
     {
         public static void Main(string[] args)
         {
+            // Question 6
             Subject subject1 = new Subject("Programming", "Vivion Kinsella", 1);
             Subject subject2 = new Subject("Databases", "Padraig Harte", 1);
             Subject subject3 = new Subject("UX Design", "Adrian Durcan", 2);
@@ -23,21 +24,25 @@ namespace CA1Question
             Subjects.Add(subject3);
             Subjects.Add(subject4);
 
+            // Question 10
             Student student1 = new Student("Joe Smith", "21/10/2000");
             Student student2 = new Student("Jane Brown", "15/03/1998");
 
+            // Question 11
             // Couldn't figure out how to display both as one
             WriteLine($"{student1} \n{subject1} \n{subject2}");
 
             WriteLine($"\n{student2} \n{subject3} \n{subject4}");
 
-            // Couldn't figure out how to call just the DOB, so did it manually
+            // Question 12
+            // Couldn't figure out how to call just the DOB, so did it manually, didn't get it exactly right
             WriteLine($"\nJoe Smith is {DisplayAgeInDays("21/10/2000")} days old");
 
             WriteLine($"\nJane Brown is {DisplayAgeInDays("15/03/1998")} days old");
             
         }
 
+        // Question 12
         public static int DisplayAgeInDays(string DOB)
         {
             int answer;
