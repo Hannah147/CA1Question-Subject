@@ -26,10 +26,12 @@ namespace CA1Question
             Student student1 = new Student("Joe Smith", "21/10/2000");
             Student student2 = new Student("Jane Brown", "15/03/1998");
 
+            // Couldn't figure out how to display both as one
             WriteLine($"{student1} \n{subject1} \n{subject2}");
 
             WriteLine($"\n{student2} \n{subject3} \n{subject4}");
 
+            // Couldn't figure out how to call just the DOB, so did it manually
             WriteLine($"\nJoe Smith is {DisplayAgeInDays("21/10/2000")} days old");
 
             WriteLine($"\nJane Brown is {DisplayAgeInDays("15/03/1998")} days old");
@@ -54,9 +56,10 @@ namespace CA1Question
 
             int ageMonths = 11 - month;
 
-            answer = (ageYears * 365) + (ageMonths * 30) + day;
+            answer = (ageYears * 365) + (ageMonths * 30);
 
-            //WriteLine("\nJoe Smith is {0} days old", answer);
+            // Wasn't sure which line was correct
+            //answer = (ageYears * 365) + (ageMonths * 30) + day;
 
             return answer;
         }
