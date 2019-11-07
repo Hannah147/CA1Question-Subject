@@ -21,7 +21,7 @@ namespace CA1Question
 
         public override string ToString()
         {
-            return "Name : " + Name + "\nDate of Birth : " + Year + "\n";
+            return $"{Name} {Lecturer} Year {Year}";
         }
 
     }
