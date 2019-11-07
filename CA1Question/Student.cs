@@ -19,15 +19,18 @@ namespace CA1Question
             Name = name;
             DateOfBirth = dateofbirth;
 
-            foreach (Subject subject in Subjects)
-            {
-                WriteLine(subject);
-            }
+                foreach (Subject subject in Subjects)
+                {
+                for (int counter = 0; counter < 2; counter++)
+                {
+                    WriteLine(subject);
+                }
+                }
         }
 
         public override string ToString()
         {
-            return "Name : " + Name + "Date of Birth" + DateOfBirth;
+            return "Name : " + Name + "\nDate of Birth : " + DateOfBirth;
         }
     }
 }

@@ -26,17 +26,15 @@ namespace CA1Question
             Student student1 = new Student("Joe Smith", "21/10/2000");
             Student student2 = new Student("Jane Brown", "15/03/1998");
 
+            WriteLine($"{student1} \n{subject1} \n{subject2}");
+
+            WriteLine($"\n{student2} \n{subject3} \n{subject4}");
 
             /*foreach (Subject subject in players)
             {
                 WriteLine(player);
             }
             */
-        }
-
-        static void DisplayStudents(List<Student> students)
-        {
-            foreach 
         }
     }
 }
