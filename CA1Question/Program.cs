@@ -16,6 +16,15 @@ namespace CA1Question
             Subject subject3 = new Subject("UX Design", "Adrian Durcan", 2);
             Subject subject4 = new Subject("OOP", "Keith McManus", 2);
 
+            List<Subject> Subjects = new List<Subject>();
+
+            Subjects.Add(subject1);
+            Subjects.Add(subject2);
+            Subjects.Add(subject3);
+            Subjects.Add(subject4);
+
+            Student student1 = new Student("Joe Smith", "21/10/2000");
+            Student student2 = new Student("Jane Brown", "15/03/1998");
 
 
             /*foreach (Subject subject in players)
@@ -23,6 +32,11 @@ namespace CA1Question
                 WriteLine(player);
             }
             */
+        }
+
+        static void DisplayStudents(List<Student> students)
+        {
+            foreach 
         }
     }
 }
