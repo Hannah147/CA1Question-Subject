@@ -34,6 +34,7 @@ namespace CA1Question
 
             WriteLine($"\n{student2} \n{subject3} \n{subject4}");
 
+
             // Question 12
             // Couldn't figure out how to call just the DOB, so did it manually, didn't get it exactly right
             WriteLine($"\nJoe Smith is {DisplayAgeInDays("21/10/2000")} days old");

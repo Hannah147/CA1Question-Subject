@@ -9,9 +9,9 @@ namespace CA1Question
     public class Subject
     {
         // Question 3
-        public static string Name { get; set; }
-        public static string Lecturer { get; set; }
-        public static int Year { get; set; }
+        public string Name { get; set; }
+        public string Lecturer { get; set; }
+        public int Year { get; set; }
 
         // Question 4
         public Subject(string name, string lecturer, int year)
