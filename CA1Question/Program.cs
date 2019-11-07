@@ -30,18 +30,19 @@ namespace CA1Question
 
             WriteLine($"\n{student2} \n{subject3} \n{subject4}");
 
-            DisplayAgeInDays(Student.DateOfBirth);
+            WriteLine($"\nJoe Smith is {DisplayAgeInDays("21/10/2000")} days old");
+
+            WriteLine($"\nJane Brown is {DisplayAgeInDays("15/03/1998")} days old");
+            
         }
 
-        public static void DisplayAgeInDays(string DOB)
+        public static int DisplayAgeInDays(string DOB)
         {
-            int dateBirth, answer;
-
-            dateBirth = int.Parse(DOB);
+            int answer;
 
             string[] fields = new string[3];
 
-            fields = DOB.Split('-');
+            fields = DOB.Split('/');
 
             int year = int.Parse(fields[2]);
 
@@ -53,7 +54,11 @@ namespace CA1Question
 
             int ageMonths = 11 - month;
 
-            answer = (year * 365) + (month * 30) + day;
+            answer = (ageYears * 365) + (ageMonths * 30) + day;
+
+            //WriteLine("\nJoe Smith is {0} days old", answer);
+
+            return answer;
         }
 
 
