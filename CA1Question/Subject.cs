@@ -19,5 +19,10 @@ namespace CA1Question
             Year = year;
         }
 
+        public override string ToString()
+        {
+            return "Name : " + Name + "\nDate of Birth : " + Year + "\n";
+        }
+
     }
 }
